@@ -1,0 +1,5 @@
+event,proposal,minute,state,transferred_kib
+R1,A1,3,已传未装,55
+R2,A2,4,已安装,250
+R3,A1,7,未安装,0
+R4,A4,8,确认占满,65

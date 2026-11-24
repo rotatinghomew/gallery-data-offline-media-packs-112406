@@ -1,0 +1,187 @@
+{
+  "tables": {
+    "pages": [
+      "page",
+      "order",
+      "required_mode",
+      "optional"
+    ],
+    "assets": [
+      "asset",
+      "component",
+      "version",
+      "kib",
+      "approved_from",
+      "device_type",
+      "package"
+    ],
+    "dependencies": [
+      "page",
+      "version",
+      "mode",
+      "asset",
+      "optional_group"
+    ],
+    "cohorts": [
+      "cohort",
+      "day",
+      "venue",
+      "route",
+      "start",
+      "size",
+      "mode",
+      "cutoff",
+      "partition"
+    ],
+    "requests": [
+      "request",
+      "cohort",
+      "device",
+      "page",
+      "version",
+      "minute",
+      "trigger",
+      "request_frame"
+    ],
+    "results": [
+      "request",
+      "minute",
+      "state",
+      "fallback_step",
+      "known_day"
+    ],
+    "installed": [
+      "cohort",
+      "device",
+      "device_type",
+      "asset",
+      "day",
+      "minute",
+      "state",
+      "delivery"
+    ],
+    "future_tours": [
+      "cohort",
+      "mode",
+      "first",
+      "last",
+      "allow_backup",
+      "announced"
+    ],
+    "issued": [
+      "receipt",
+      "cohort",
+      "device",
+      "device_type",
+      "asset",
+      "minute",
+      "state",
+      "space_kib"
+    ],
+    "slots": [
+      "window",
+      "start",
+      "end",
+      "kib",
+      "venue"
+    ],
+    "options": [
+      "proposal",
+      "cohort",
+      "device",
+      "window",
+      "asset",
+      "required_from",
+      "guarantees"
+    ],
+    "revision": [
+      "memo",
+      "asset",
+      "minute",
+      "action",
+      "substitute"
+    ],
+    "transfer_receipts": [
+      "event",
+      "proposal",
+      "minute",
+      "state",
+      "transferred_kib"
+    ]
+  },
+  "references": [
+    [
+      "pages",
+      "page",
+      "dependencies",
+      "page"
+    ],
+    [
+      "assets",
+      "asset",
+      "dependencies",
+      "asset"
+    ],
+    [
+      "cohorts",
+      "cohort",
+      "requests",
+      "cohort"
+    ],
+    [
+      "pages",
+      "page",
+      "requests",
+      "page"
+    ],
+    [
+      "requests",
+      "request",
+      "results",
+      "request"
+    ],
+    [
+      "assets",
+      "asset",
+      "installed",
+      "asset"
+    ],
+    [
+      "future_tours",
+      "cohort",
+      "issued",
+      "cohort"
+    ],
+    [
+      "assets",
+      "asset",
+      "revision",
+      "asset"
+    ],
+    [
+      "assets",
+      "asset",
+      "options",
+      "asset"
+    ],
+    [
+      "slots",
+      "window",
+      "options",
+      "window"
+    ],
+    [
+      "options",
+      "proposal",
+      "transfer_receipts",
+      "proposal"
+    ]
+  ],
+  "agreement_keys": [
+    "time",
+    "measurement",
+    "versions",
+    "evaluate",
+    "operations"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "time": "历史 day 为连续馆日，minute 是各团领取前下载窗口起算的分钟。未来窗口左闭右开。",
+  "measurement": {
+    "asset_kib": "KiB，1024 字节为一 KiB",
+    "download_state": "已传输不是已安装，已安装才可支持内容",
+    "access": "同一页同发布版的必需资源到齐并适用设备后才完整",
+    "alternatives": "备用说明不是原说明打开；仅当 tour 明示允许且模式相容才在兑现时使用"
+  },
+  "versions": {
+    "差量": "应用到同一 component 紧邻的上个完整兼容版；在安装确认后才可依新版本使用。差量用目标版资产的设备限制。",
+    "withdrawn": "可查出借时刻的原配置，撤回生效后不再当新可用；已采用的备用可按确认范围继续"
+  },
+  "evaluate": {
+    "reference_day": [
+      1,
+      41
+    ],
+    "holdout_day": [
+      42,
+      56
+    ],
+    "min_complete_by_committed_mode": 0.92,
+    "min_supported_cohorts": 6,
+    "max_bytes_relative_error": 0.18
+  },
+  "operations": {
+    "device_space": "每行 space_kib 是可供离线导览使用的整机容量，已有资源也占用",
+    "network_slot_capacity": "窗口内所有平板实际传输量之和，不按预计增量重复扣减。优先已答复学校的可达模式"
+  }
+}
