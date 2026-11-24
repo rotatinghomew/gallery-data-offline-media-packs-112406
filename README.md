@@ -15,5 +15,6 @@
 - `data/options.csv` 记录可用下载选项及已知要保留的辅助/语言承诺。required_from 是应用该差量的原版。列为 `proposal`、`cohort`、`device`、`window`、`asset`、`required_from`、`guarantees`。
 - `data/revision.csv` 记录内容方给出的勘误及可用替代。列为 `memo`、`asset`、`minute`、`action`、`substitute`。
 - `data/transfer_receipts.csv` 记录明确区分抵达、安装和届时仍不确定的回报。列为 `event`、`proposal`、`minute`、`state`、`transferred_kib`。
+- `data/fallbacks.csv` 记录馆员给各设备领取人备纸质说明的确认时点和适用的展页、体验模式。勘误的 `substitute` 引用备用说明编号。
 
 使用 Python 3.11，无第三方依赖。用 `python3 -m unittest discover -s tests -v` 核对文件的可读性、列结构和确定引用，源文件保持只读。

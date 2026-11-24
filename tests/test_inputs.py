@@ -18,6 +18,9 @@ class InputFilesTest(unittest.TestCase):
                     raise ValueError(f"{name} 的表头与格式登记不符")
                 cls.tables[name] = list(reader)
 
+    def test_csv_files_match_catalog(self):
+        self.assertEqual({path.stem for path in DATA.glob("*.csv")}, set(self.tables))
+
     def test_records_match_headers(self):
         for name, records in self.tables.items():
             with self.subTest(table=name):

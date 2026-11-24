@@ -107,6 +107,15 @@
       "minute",
       "state",
       "transferred_kib"
+    ],
+    "fallbacks": [
+      "fallback",
+      "cohort",
+      "device",
+      "page",
+      "mode",
+      "minute",
+      "state"
     ]
   },
   "references": [
@@ -175,6 +184,24 @@
       "proposal",
       "transfer_receipts",
       "proposal"
+    ],
+    [
+      "pages",
+      "page",
+      "fallbacks",
+      "page"
+    ],
+    [
+      "future_tours",
+      "cohort",
+      "fallbacks",
+      "cohort"
+    ],
+    [
+      "fallbacks",
+      "fallback",
+      "revision",
+      "substitute"
     ]
   ],
   "agreement_keys": [
